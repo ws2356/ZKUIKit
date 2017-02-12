@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZKUIKit_Example' do
+  pod 'ZKUIKit', :path => '../'
+
+  target 'ZKUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
