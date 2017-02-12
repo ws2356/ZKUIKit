@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZKUIKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ZKUIKit.'
+  s.summary          = 'a video player from zhike project'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+a video player from zhike project
                        DESC
 
   s.homepage         = 'https://github.com/bestofsong/ZKUIKit'
@@ -32,11 +32,13 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ZKUIKit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ZKUIKit' => ['ZKUIKit/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'ZKUIKit' => ['ZKUIKit/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
+  s.dependency 'ZKVideoCache'
 end

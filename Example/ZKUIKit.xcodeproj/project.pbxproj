@@ -14,7 +14,6 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* ZKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* ZKAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* ZKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* ZKViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -24,6 +23,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		F4A9AE38088B060214F912A1 /* Pods_ZKUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09DF573DCE9AB87F65F4D5A7 /* Pods_ZKUIKit_Example.framework */; };
+		F78F5CDE1E50C29A003A3832 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F78F5CDB1E50C29A003A3832 /* TableViewCell.m */; };
+		F78F5CDF1E50C29A003A3832 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F78F5CDD1E50C29A003A3832 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +50,6 @@
 		6003F59B195388D20070C39A /* ZKUIKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZKUIKit-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* ZKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* ZKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* ZKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* ZKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* ZKUIKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKUIKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -58,15 +57,19 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6527BC706E476BE50A46CA09 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6527BC706E476BE50A46CA09 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		87BBEAB16D7D332CC3794023 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		87BBEAB16D7D332CC3794023 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		87E52192B5909F3E4F521559 /* Pods-ZKUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKUIKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKUIKit_Tests/Pods-ZKUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A6A9354D05532E5232C9015C /* Pods-ZKUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKUIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKUIKit_Tests/Pods-ZKUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9EC3285C8396521DAEFA82C /* Pods-ZKUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKUIKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKUIKit_Example/Pods-ZKUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C1157B16F0239D7DF5C11667 /* ZKUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZKUIKit.podspec; path = ../ZKUIKit.podspec; sourceTree = "<group>"; };
+		C1157B16F0239D7DF5C11667 /* ZKUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZKUIKit.podspec; path = ../ZKUIKit.podspec; sourceTree = "<group>"; };
 		D1F087083129B25D1D04881C /* Pods_ZKUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F78F5CDA1E50C29A003A3832 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		F78F5CDB1E50C29A003A3832 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		F78F5CDC1E50C29A003A3832 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		F78F5CDD1E50C29A003A3832 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,11 +146,13 @@
 		6003F593195388D20070C39A /* Example for ZKUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F78F5CDA1E50C29A003A3832 /* TableViewCell.h */,
+				F78F5CDB1E50C29A003A3832 /* TableViewCell.m */,
+				F78F5CDC1E50C29A003A3832 /* TableViewController.h */,
+				F78F5CDD1E50C29A003A3832 /* TableViewController.m */,
 				6003F59C195388D20070C39A /* ZKAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZKAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* ZKViewController.h */,
-				6003F5A6195388D20070C39A /* ZKViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -250,6 +255,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = bestofsong;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = M863E7K5E6;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -395,8 +403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ZKAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* ZKViewController.m in Sources */,
+				F78F5CDE1E50C29A003A3832 /* TableViewCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				F78F5CDF1E50C29A003A3832 /* TableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +533,7 @@
 			baseConfigurationReference = A9EC3285C8396521DAEFA82C /* Pods-ZKUIKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M863E7K5E6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZKUIKit/ZKUIKit-Prefix.pch";
 				INFOPLIST_FILE = "ZKUIKit/ZKUIKit-Info.plist";
@@ -539,6 +549,7 @@
 			baseConfigurationReference = 4E722C28E8440B753318A651 /* Pods-ZKUIKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M863E7K5E6;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZKUIKit/ZKUIKit-Prefix.pch";
 				INFOPLIST_FILE = "ZKUIKit/ZKUIKit-Info.plist";

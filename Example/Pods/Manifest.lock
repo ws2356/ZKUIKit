@@ -1,0 +1,45 @@
+PODS:
+  - CocoaLumberjack (3.0.0):
+    - CocoaLumberjack/Default (= 3.0.0)
+    - CocoaLumberjack/Extensions (= 3.0.0)
+  - CocoaLumberjack/Core (3.0.0)
+  - CocoaLumberjack/Default (3.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (3.0.0):
+    - CocoaLumberjack/Default
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - GCDWebServer (3.3.3):
+    - GCDWebServer/Core (= 3.3.3)
+  - GCDWebServer/Core (3.3.3)
+  - Masonry (1.0.2)
+  - ZKNetwork (0.1.0):
+    - CocoaLumberjack
+    - FMDB
+  - ZKUIKit (0.1.0):
+    - Masonry
+    - ZKVideoCache
+  - ZKVideoCache (0.1.0):
+    - GCDWebServer
+    - ZKNetwork
+
+DEPENDENCIES:
+  - ZKUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  ZKUIKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: c823149bccc5519a9447aeb433be7b1212a7d6a5
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  GCDWebServer: 1c39a1f0763e4eb492bee021e4270fce097d3555
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  ZKNetwork: 1b67fbb4782b7b52f34ec3c7b2d975d6f13c837f
+  ZKUIKit: e1e585ac26e2992f7bfccd73198f40130a3918db
+  ZKVideoCache: cc5493397dc04c342c40397897e23246cea1f623
+
+PODFILE CHECKSUM: 64d8a303ba915b7e6c80335747af483a09d81c4d
+
+COCOAPODS: 1.2.0
