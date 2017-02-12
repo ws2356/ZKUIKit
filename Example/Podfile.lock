@@ -19,13 +19,13 @@ PODS:
     - FMDB
   - ZKUIKit (0.1.0):
     - Masonry
-    - ZKVideoCache
   - ZKVideoCache (0.1.0):
     - GCDWebServer
     - ZKNetwork
 
 DEPENDENCIES:
   - ZKUIKit (from `../`)
+  - ZKVideoCache
 
 EXTERNAL SOURCES:
   ZKUIKit:
@@ -37,9 +37,9 @@ SPEC CHECKSUMS:
   GCDWebServer: 1c39a1f0763e4eb492bee021e4270fce097d3555
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   ZKNetwork: 1b67fbb4782b7b52f34ec3c7b2d975d6f13c837f
-  ZKUIKit: e1e585ac26e2992f7bfccd73198f40130a3918db
+  ZKUIKit: f2bbf9d0a268beccbf22f42e6898976fe4f4f9b1
   ZKVideoCache: cc5493397dc04c342c40397897e23246cea1f623
 
-PODFILE CHECKSUM: 64d8a303ba915b7e6c80335747af483a09d81c4d
+PODFILE CHECKSUM: b4cc27041f111bf15e9efd6695f756e1524a66f6
 
 COCOAPODS: 1.2.0

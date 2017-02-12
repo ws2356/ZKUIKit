@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZKUIKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'a video player from zhike project'
 
 # This description is used to generate tags and improve search results.
@@ -40,5 +40,4 @@ a video player from zhike project
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'Masonry'
-  s.dependency 'ZKVideoCache'
 end

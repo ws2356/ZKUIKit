@@ -27,9 +27,6 @@
   "dependencies": {
     "Masonry": [
 
-    ],
-    "ZKVideoCache": [
-
     ]
   }
 }
