@@ -35,7 +35,7 @@
   UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                         action:@selector(backButtonTapAction:)];
   [titleLabel addGestureRecognizer:tap];
-  NSBundle *bundle = [NSBundle bundleForClass:self.class];
+  NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"ZKUIKit-Images" ofType:@"bundle"]];
   
   [backButton setImage:[UIImage imageNamed:@"ic-back-white" inBundle:bundle compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
   [backButton addTarget:self action:@selector(backButtonTapAction:) forControlEvents:UIControlEventTouchUpInside];

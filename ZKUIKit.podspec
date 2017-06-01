@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZKUIKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'a video player from zhike project'
 
 # This description is used to generate tags and improve search results.
@@ -33,7 +33,7 @@ a video player from zhike project
   s.source_files = 'ZKUIKit/Classes/**/*'
   
   s.resource_bundles = {
-    'ZKUIKit' => ['ZKUIKit/Assets/*.png']
+    'ZKUIKit-Images' => ['ZKUIKit/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

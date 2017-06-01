@@ -40,7 +40,8 @@
   
   _progressView = [ZKVideoProgressView new];
   
-  NSBundle *bundle = [NSBundle bundleForClass:self.class];
+  NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"ZKUIKit-Images" ofType:@"bundle"]];
+
   
   UIButton *btPlay = [UIButton new];
   self.btPlay = btPlay;
