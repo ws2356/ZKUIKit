@@ -259,7 +259,7 @@ static void *KVO_CTX_PLAYER = &KVO_CTX_PLAYER;
   if (self.fullscreen) {
     UIView *window = [UIApplication sharedApplication].keyWindow;
     ZKVideoViewController *vc = [[ZKVideoViewController alloc] initWithBeginTime:self.currentTime
-                                 fromRect:[self convertRect:self.frame toView:window]];
+                                 fromRect:[self.superview convertRect:self.frame toView:window]];
     vc.onDismiss = ^(NSDictionary *playbackInfo){
       NSNumber *currentTime = playbackInfo[@"currentTime"];
       if (currentTime) {
