@@ -82,6 +82,13 @@
   return self.videoView.fullscreen && self.videoView.titleBar.hidden;
 }
 
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
+    if (self.videoView.fullscreen) {
+        return [super supportedInterfaceOrientations] | UIInterfaceOrientationMaskLandscapeRight;
+    }
+    return [super supportedInterfaceOrientations];
+}
+
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
   if (self.videoView.fullscreen) {
     return UIInterfaceOrientationLandscapeRight;
