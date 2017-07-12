@@ -575,8 +575,17 @@ static void *KVO_CTX_PLAYER = &KVO_CTX_PLAYER;
   AVURLAsset *asset = usingAsset ? self.asset : [AVURLAsset assetWithURL:self.url];
   _asset = asset;
   AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:self.asset];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self
+                                                    name:AVPlayerItemDidPlayToEndTimeNotification
+                                                  object:self.player.currentItem];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(videoPlayDidCompleted:)
+                                                 name:AVPlayerItemDidPlayToEndTimeNotification
+                                               object:playerItem];
   if (!self.player) {
     self.player = [AVPlayer playerWithPlayerItem:playerItem];
+      
     NSAssert(self.player.currentItem, @"");
     [self configurePlayer];
     [self configurePlayerItem:self.player.currentItem];
@@ -821,6 +830,11 @@ static void *KVO_CTX_PLAYER = &KVO_CTX_PLAYER;
 - (void)handleLoadedTimeRangeUpdate {
   NSUInteger dur = CMTimeGetSeconds(self.player.currentItem.duration);
   [self.controlBar.progressView updateLoadedRanges:self.player.currentItem.loadedTimeRanges duration:dur];
+}
+
+#pragma mark - Notification Action
+- (void)videoPlayDidCompleted:(NSNotification *)sender {
+    self.playerState = PlayerStateComplete;
 }
 
 #pragma mark -- js interface
