@@ -9,6 +9,7 @@
 #import "ZKPlayerTitleBar.h"
 #import "ZKEnlargeView.h"
 #import "Masonry.h"
+#import "ZKUIKitResourceManager.h"
 
 @interface ZKPlayerTitleBar ()
 @property (strong, nonatomic) UILabel *titleLabel;
@@ -35,9 +36,8 @@
   UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                         action:@selector(backButtonTapAction:)];
   [titleLabel addGestureRecognizer:tap];
-  NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"ZKUIKit-Images" ofType:@"bundle"]];
   
-  [backButton setImage:[UIImage imageNamed:@"ic-back-white" inBundle:bundle compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+  [backButton setImage:[UIImage imageNamed:@"ic-back-white" inBundle:[ZKUIKitResourceManager resourceBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
   [backButton addTarget:self action:@selector(backButtonTapAction:) forControlEvents:UIControlEventTouchUpInside];
   
   const CGFloat left = 10;

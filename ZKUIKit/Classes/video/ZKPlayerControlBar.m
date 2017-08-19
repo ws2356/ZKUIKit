@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import "ZKVideoProgressView.h"
 #import "UIImage+ZKImageUtility.h"
+#import "ZKUIKitResourceManager.h"
 
 @interface ZKPlayerControlBar ()
 
@@ -39,8 +40,6 @@
   self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.8];
   
   _progressView = [ZKVideoProgressView new];
-  
-  NSBundle *bundle = [NSBundle bundleWithPath:[[NSBundle mainBundle] pathForResource:@"ZKUIKit-Images" ofType:@"bundle"]];
 
   
   UIButton *btPlay = [UIButton new];
@@ -48,8 +47,8 @@
   [btPlay addTarget:self
              action:@selector(togglePlayAction:)
    forControlEvents:UIControlEventTouchUpInside];
-  UIImage *icPause = [UIImage imageNamed:@"ic-pause" inBundle:bundle compatibleWithTraitCollection:nil];
-  UIImage *icPlay = [UIImage imageNamed:@"ic-play" inBundle:bundle compatibleWithTraitCollection:nil];
+  UIImage *icPause = [UIImage imageNamed:@"ic-pause" inBundle:[ZKUIKitResourceManager resourceBundle] compatibleWithTraitCollection:nil];
+  UIImage *icPlay = [UIImage imageNamed:@"ic-play" inBundle:[ZKUIKitResourceManager resourceBundle] compatibleWithTraitCollection:nil];
   [btPlay setImage:icPause forState:UIControlStateNormal];
   [btPlay setImage:icPlay forState:UIControlStateSelected];
   
@@ -79,7 +78,7 @@
   [btScreen addTarget:self
              action:@selector(fullscreenAction:)
    forControlEvents:UIControlEventTouchUpInside];
-  [btScreen setImage:[UIImage inverseColor:[UIImage imageNamed:@"ic-fullscreen-black" inBundle:bundle compatibleWithTraitCollection:nil]] forState:UIControlStateNormal];
+  [btScreen setImage:[UIImage inverseColor:[UIImage imageNamed:@"ic-fullscreen-black" inBundle:[ZKUIKitResourceManager resourceBundle] compatibleWithTraitCollection:nil]] forState:UIControlStateNormal];
   
   [self addSubview:btScreen];
   

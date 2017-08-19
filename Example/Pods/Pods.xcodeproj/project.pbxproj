@@ -167,6 +167,8 @@
 		F22E59FBB48937FB7875DBDB29A42C3B /* DDContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6716D42E602FA2F13155BF9F259B90 /* DDContextFilterLogFormatter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		F4B3E44D5D2F6508BC1BB35A9FBDEC70 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A33BD9895BB14DF8054CA84E82390 /* View+MASAdditions.m */; };
 		F6D39919E7A93EF730A42C5454FE14DA /* GCDWebServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 397B8777D4496ECAFAF525F703CD05B2 /* GCDWebServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F73C09781F48449500EAD452 /* ZKUIKitResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F73C09761F48449500EAD452 /* ZKUIKitResourceManager.h */; };
+		F73C09791F48449500EAD452 /* ZKUIKitResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F73C09771F48449500EAD452 /* ZKUIKitResourceManager.m */; };
 		F786664A1E50C96600308513 /* ic-back-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78666431E50C96600308513 /* ic-back-white@2x.png */; };
 		F786664B1E50C96600308513 /* ic-fast-backward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78666441E50C96600308513 /* ic-fast-backward@2x.png */; };
 		F786664C1E50C96600308513 /* ic-fast-forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F78666451E50C96600308513 /* ic-fast-forward@2x.png */; };
@@ -490,6 +492,8 @@
 		F4E49790DF962398C43B7E3504274624 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDWebServerFileResponse.m; path = GCDWebServer/Responses/GCDWebServerFileResponse.m; sourceTree = "<group>"; };
 		F6C29C83FB49A083C0B60FD6E2BE22E2 /* Pods-ZKUIKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKUIKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		F73B01616029707520E2319CA9254E1E /* FMDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FMDB-umbrella.h"; sourceTree = "<group>"; };
+		F73C09761F48449500EAD452 /* ZKUIKitResourceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZKUIKitResourceManager.h; sourceTree = "<group>"; };
+		F73C09771F48449500EAD452 /* ZKUIKitResourceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKUIKitResourceManager.m; sourceTree = "<group>"; };
 		F78666431E50C96600308513 /* ic-back-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-back-white@2x.png"; sourceTree = "<group>"; };
 		F78666441E50C96600308513 /* ic-fast-backward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-fast-backward@2x.png"; sourceTree = "<group>"; };
 		F78666451E50C96600308513 /* ic-fast-forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic-fast-forward@2x.png"; sourceTree = "<group>"; };
@@ -803,6 +807,8 @@
 				0C6636E2E305411F977FC24514FA2606 /* tools */,
 				207801AF6FACB0B4F4AB165D7B183AA7 /* video */,
 				29CF26E35F25741612DEFFB4DEE8EB0D /* views */,
+				F73C09761F48449500EAD452 /* ZKUIKitResourceManager.h */,
+				F73C09771F48449500EAD452 /* ZKUIKitResourceManager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1198,6 +1204,7 @@
 				46BCF6AD09D0E803C4668842D2EF119D /* DDLegacyMacros.h in Headers */,
 				A014969FB30EEED23C3D76BD4D65C78C /* DDLog+LOGV.h in Headers */,
 				75FB440FD0DD7F3C2D345BDFA15B9658 /* DDLog.h in Headers */,
+				F73C09781F48449500EAD452 /* ZKUIKitResourceManager.h in Headers */,
 				BFFD83AC2259740A5A744A0135D23837 /* DDLogMacros.h in Headers */,
 				50C496B6A14E982C5C09CC54DE00F90B /* DDMultiFormatter.h in Headers */,
 				72F63C2F0967EE8CDF957D21F459EA3F /* DDTTYLogger.h in Headers */,
@@ -1538,6 +1545,7 @@
 				77FF7FD02536F0ADD5A223C21C5DD9EA /* DDAbstractDatabaseLogger.m in Sources */,
 				8F76C5F37E8242B88EF6C49529A86943 /* DDASLLogCapture.m in Sources */,
 				55ABA070EE224BDFAED54A74B7389704 /* DDASLLogger.m in Sources */,
+				F73C09791F48449500EAD452 /* ZKUIKitResourceManager.m in Sources */,
 				F22E59FBB48937FB7875DBDB29A42C3B /* DDContextFilterLogFormatter.m in Sources */,
 				53D4700D729CB4E20F430F66E528E866 /* DDDispatchQueueLogFormatter.m in Sources */,
 				95E024141B195F4A94AC8717C8D470E9 /* DDFileLogger.m in Sources */,
