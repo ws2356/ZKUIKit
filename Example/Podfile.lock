@@ -17,7 +17,7 @@ PODS:
   - ZKNetwork (0.1.0):
     - CocoaLumberjack
     - FMDB
-  - ZKUIKit (0.1.0):
+  - ZKUIKit (0.1.10):
     - Masonry
   - ZKVideoCache (0.1.0):
     - GCDWebServer
@@ -37,9 +37,9 @@ SPEC CHECKSUMS:
   GCDWebServer: 1c39a1f0763e4eb492bee021e4270fce097d3555
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   ZKNetwork: 1b67fbb4782b7b52f34ec3c7b2d975d6f13c837f
-  ZKUIKit: f2bbf9d0a268beccbf22f42e6898976fe4f4f9b1
+  ZKUIKit: f6fbbb23e0f62821845bdfa901cbbbe9fafb770c
   ZKVideoCache: cc5493397dc04c342c40397897e23246cea1f623
 
 PODFILE CHECKSUM: b4cc27041f111bf15e9efd6695f756e1524a66f6
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.3.1

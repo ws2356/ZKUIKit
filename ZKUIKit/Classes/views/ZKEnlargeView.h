@@ -10,6 +10,6 @@
 
 @interface ZKEnlargeView : UIButton
 
-- (instancetype)initWithMinimumEffectSize:(CGSize)size;
+- (nonnull instancetype)initWithMinimumEffectSize:(CGSize)size;
 
 @end

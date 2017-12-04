@@ -18,27 +18,27 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
   PlayerStateComplete,
 };
 
-typedef void (^player_event_callback_t) (NSDictionary*event);
+typedef void (^player_event_callback_t) (NSDictionary * _Nullable event);
 
 
 @interface ZKVideoView : UIView
 
-- (instancetype)initWithFullscreenOnly:(BOOL)fullscreenOnly;
-- (instancetype)initWithFullscreenOnly:(BOOL)fullscreenOnly beginFrom:(Float64)beginFrom;
+- (nonnull instancetype)initWithFullscreenOnly:(BOOL)fullscreenOnly;
+- (nonnull instancetype)initWithFullscreenOnly:(BOOL)fullscreenOnly beginFrom:(Float64)beginFrom;
 
-@property (copy, nonatomic) NSString *source;
+@property (copy, nonatomic) NSString * _Nullable source;
 
 @property (assign, nonatomic) PlayerState playerState;
 
-@property (strong, nonatomic) NSString *videoTitle;
+@property (strong, nonatomic) NSString * _Nullable videoTitle;
 
-@property (copy, nonatomic) player_event_callback_t playerEventCallback;
+@property (copy, nonatomic) player_event_callback_t _Nullable playerEventCallback;
 
 @property (readonly, nonatomic) BOOL fullscreen;
 
-@property (weak, nonatomic) UIViewController *containerVC;
+@property (weak, nonatomic) UIViewController * _Nullable containerVC;
 
-@property (readonly, nonatomic) ZKPlayerTitleBar *titleBar;
+@property (readonly, nonatomic) ZKPlayerTitleBar * _Nullable titleBar;
 @property (readonly, nonatomic) Float64 currentTime;
 
 - (void)stop;

@@ -10,9 +10,9 @@
 
 @interface ZKPlayerTitleBar : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame topReserve:(CGFloat)topReserve;
+- (nonnull instancetype)initWithFrame:(CGRect)frame topReserve:(CGFloat)topReserve;
 
-@property (copy, nonatomic) NSString *title;
-@property (copy, nonatomic) dispatch_block_t backButtonAtion;
+@property (copy, nonatomic) NSString * _Nullable title;
+@property (copy, nonatomic) dispatch_block_t _Nullable backButtonAtion;
 
 @end

@@ -12,8 +12,8 @@
 
 - (void)removeSizeConstraints;
 
-- (NSArray<NSLayoutConstraint*>*)constraintsWithSuperview;
-- (NSArray<NSLayoutConstraint*>*)constraintsSelf;
-- (NSArray<NSLayoutConstraint*>*)constraintsWithChildren;
+- (nonnull NSArray<NSLayoutConstraint*>*)constraintsWithSuperview;
+- (nonnull NSArray<NSLayoutConstraint*>*)constraintsSelf;
+- (nonnull NSArray<NSLayoutConstraint*>*)constraintsWithChildren;
 
 @end

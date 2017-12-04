@@ -10,6 +10,6 @@
 
 @interface UIViewController (Utility)
 
-+(UIViewController*) currentViewController;
++(nonnull UIViewController*) currentViewController;
 
 @end

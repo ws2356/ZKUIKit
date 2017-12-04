@@ -12,9 +12,9 @@
 
 @property (assign, nonatomic) CGFloat progress;
 
-- (void)updateLoadedRanges:(NSArray<NSValue*> *)loadedRanges
+- (void)updateLoadedRanges:(nonnull NSArray<NSValue*> *)loadedRanges
                   duration:(float)duration;
 
-@property (strong, nonatomic) NSArray<NSNumber*> *dots;
+@property (strong, nonatomic) NSArray<NSNumber*> * _Nullable dots;
 
 @end

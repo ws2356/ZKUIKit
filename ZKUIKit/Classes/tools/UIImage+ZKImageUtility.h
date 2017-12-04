@@ -10,8 +10,8 @@
 typedef void (^DrawingBlock)(CGSize size);
 
 @interface UIImage (ZKImageUtility)
-+ (UIImage *)imageTakenFromView:(UIView *)view;
-+ (UIImage *)inverseColor:(UIImage *)image;
-+ (UIImage*)imageWithSize:(CGSize)size drawingBlock:(DrawingBlock)drawingBlock;
-- (UIImage*)resize:(CGSize)size;
++ (nullable UIImage *)imageTakenFromView:(nonnull UIView *)view;
++ (nonnull UIImage *)inverseColor:(nonnull UIImage *)image;
++ (nonnull UIImage*)imageWithSize:(CGSize)size drawingBlock:(nonnull DrawingBlock)drawingBlock;
+- (nonnull UIImage*)resize:(CGSize)size;
 @end
